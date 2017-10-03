@@ -8,7 +8,7 @@
  * 
  * @param  string $string The string you are testing.
  * @param  array  &$array Referenced array to add string to or check if exists.
- * @return booleon        True if exists in array, false if it doesn't.
+ * @return boolean        True if exists in array, false if it doesn't.
  */
 function checkStringDuplicate( $string, &$array){
     
