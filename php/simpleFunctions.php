@@ -16,7 +16,7 @@ function checkStringDuplicate( $string, &$array){
         trigger_error("Array needed for argument 2", E_USER_ERROR);
     }
 
-    if(in_array($string, $array) === true){
+    if(in_array(trim($string), $array) === true){
         return true;
     } else {
         $array[] = $string;
