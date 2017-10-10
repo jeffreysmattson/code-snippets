@@ -8,7 +8,7 @@ var object_js = {
     variables : '',
 
     init: function(){
-        this.awesomeFunction(;)
+        this.awesomeFunction();
     },
 
     awesomeFunction : function(){
