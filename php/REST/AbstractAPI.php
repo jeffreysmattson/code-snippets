@@ -28,7 +28,9 @@ abstract class AbstractAPI
      * Property: file
      * Stores the input of the PUT request
      */
-     protected $file = Null;
+    protected $file = Null;
+
+    protected $request;
 
     /**
      * Constructor: __construct
@@ -40,7 +42,11 @@ abstract class AbstractAPI
         header("Content-Type: application/json");
 
         $this->args = explode('/', rtrim($request, '/'));
+echo "Args: ";
+var_dump($this->args);
         $this->endpoint = array_shift($this->args);
+echo "Endpoint: ".$this->endpoint."\n";
+
         if (array_key_exists(0, $this->args) && !is_numeric($this->args[0])) {
             $this->verb = array_shift($this->args);
         }
