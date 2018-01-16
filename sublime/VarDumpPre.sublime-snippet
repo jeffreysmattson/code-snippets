@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+echo "<pre>";
+var_dump(${1:this});
+echo "</pre>";
+]]></content>
+    <tabTrigger>pre</tabTrigger>
+    <description>Var Dump Pre Tags</description>
+</snippet>
