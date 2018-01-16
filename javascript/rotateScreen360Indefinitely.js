@@ -1,0 +1,2 @@
+document.documentElement.appendChild(document.createElement('style')).textContent = `body {animation: rotation 2s infinite linear;} @keyframes rotation {from {transform: rotate(0deg);} to {transform: rotate(359deg);}}`;
+"body {animation: rotation 2s infinite linear;} @keyframes rotation {from {transform: rotate(0deg);} to {transform: rotate(359deg);}}"

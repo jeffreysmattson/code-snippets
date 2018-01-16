@@ -49,4 +49,21 @@ function getUserIP(){
 
     return $ip;
 }
+
+/**
+ * Find Percentage Shift Between Two Numbers
+ * 
+ * @param int $val1 First number
+ * @param int $val2 Second number
+ */
+function PercentChange($val1,$val2)
+{
+    if($val1 == 0 && $val2 == 0){
+        return 0;
+    }
+    $diff = $val2 - $val1;
+    $average = ($val2 + $val1)/2;
+    return ($diff / $average) * 100;
+    
+}
 ?>
